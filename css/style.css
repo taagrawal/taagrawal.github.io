@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.bannerImg{
+	background-image:url(../img/Fat-Banner.jpg);
+	height: 600px; 
+	width: 100%; 
+	background-size: cover;
+}
+
+.bannerCon {	
+	text-align: center;
+}
+ 
+.links{
+	width: 1100px;
+	margin: auto
+}
+.links ul {
+	list-style: none;
+}
+
+ .pageDtl h1,h2,h3,h4,h5,h6{
+	color: #fff;
+}
+
+/*----------------------------Media started for desktop navigation-----------------------------------------*/
+
+@media (min-width: 1200px) {
+.cui .header {
+	height: 100px
+}
+.cui .header-bar {
+	height: 80px!important
+}
+.cui .header-menus {
+	bottom: -20px
+}
+.userIcon {
+	margin-left: 10px !important;
+}
+.cui .dropdown-menu {
+	margin: 45px 0 0 -50px !important;
+}
+/*.cui ul.tabs > li, .cui .nav-tabs > li{margin-right:30px!important}*/
+.cui .header-menus .nav.nav-tabs {
+	overflow: visible
+}
+.cui .nav-tabs > li.show {
+	display: inline-block!important
+}
+.cui .nav-tabs .tab__heading > span, .cui .nav-tabs tab-heading > span, .cui .nav-tabs .tab-heading > span {
+	font-size: 0.9rem
+}
+.cui .nav-tabs > li {
+	position: relative
+}
+
+	/***********  Desktop navigation DropDown CSS   **************/
+.cui .nav-tabs > li > ul {
+	width: 300px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 100%;
+	left: 0;
+	margin-top: 0;
+	z-index: -1;
+	min-width: 200px;
+	max-width: 300px;
+	background-color: #f5f5f5;
+	text-align: left;
+	border: 1px solid #e2e2e2;
+	border-top-color: #dfdfdf;
+	border-radius: 0 0 2px 2px;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.cui .nav-tabs > li:hover > ul {
+	visibility: visible;
+	opacity: 1;
+}
+.cui .nav-tabs ul:not(:first-child) {
+	padding-left: 0
+}
+.cui .nav-tabs ul ul:not(:first-child) {
+	padding-left: 0;
+	list-style: none
+}
+.cui .nav-tabs ul ul:not(:first-child) li {
+	padding-left: 20px
+}
+.cui .nav-tabs > li > ul li {
+	padding: 10px 20px;
+}
+.cui .nav-tabs > li > ul li a {
+	height: auto;
+	min-height: 40px;
+	line-height: 20px;
+	display: inline;
+	vertical-align: middle;
+	padding: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 300px;
+	white-space: normal;
+}
+.cui .nav-tabs > li > ul li a:hover {
+	cursor: pointer;
+	/* background: #f2f2f2;*/ text-decoration: underline
+}
+/*.cui .nav-tabs > li > ul li a.extLink:after{ content: ""; height: 20px; line-height: 20px; margin-left: 5px;}*/
+.cui .nav-tabs > li > ul li.subLink {
+	padding-right: 40px;
+	padding-bottom: 0;
+	position: relative;
+	cursor: pointer
+}
+.cui .nav-tabs > li > ul li.subLink:after {
+	content: "";
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	display: inline-block;
+	font-family: "cui-font";
+	font-size: inherit;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	text-decoration: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	vertical-align: -12%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.cui .nav-tabs > li > ul li.subLink.close:after {
+	content: "";
+}
+.cui .nav-tabs > li > ul li.subLink.close > ul {
+	display: none
+}
+/***********  Toolbar DropDown CSS   **************/
+.cui .header-toolbar > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	position: relative
+}
+.cui .header-toolbar > ul > li {
+	margin: 0 0 0 10px; position: relative;
+}
+.cui .header-toolbar > ul > li > a, .cui .header-toolbar > ul > li > a:hover, .cui .header-toolbar > ul > li > a:focus {
+	color: #fff
+}
+.cui .header-toolbar > ul > li > a:focus {
+	box-shadow: 0 0 2px #000!important
+}
+.cui .header-toolbar > ul > li > div.dropDown {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 75px;
+	left: auto;
+	right: 0;
+	margin-top: 0;
+	z-index: -1;
+	min-width: 200px;
+	max-width: 300px;
+	background-color: #fff;
+	text-align: left;
+	border-top: 2px solid #049fd9;
+	border-radius: 0 0 2px 2px;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+.cui .header-toolbar > ul > li.open > div.dropDown {
+	visibility: visible;
+	opacity: 1;
+	z-index: 999999;
+}
+.cui .header-toolbar > ul > li.open > a {
+	position: relative
+}
+/*.cui .header-toolbar > ul > li.open > div.dropDown:before {
+	width: 0;
+	height: 0;
+	position: absolute;
+	content: "";
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #049fd9;
+	top: -10px;
+	right: 5px;
+}
+.cui .header-toolbar > ul > li.open:nth-child(4) > div.dropDown:before {
+	right: 85px;
+}
+.cui .header-toolbar > ul > li.open:nth-child(5) > div.dropDown:before {
+	right: 45px;
+}*/
+.cui .header-toolbar > ul > li > div.dropDown ul:not(:first-child) {
+	padding-left: 20px;
+}
+.cui .header-toolbar > ul > li > div.dropDown > a {
+	height: 40px;
+	line-height: 4rem;
+	display: inline-block;
+	vertical-align: middle;
+	color: #58585b;
+	padding: 0 40px 0 10px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 300px;
+	white-space: nowrap;
+}
+.cui .header-toolbar > ul > li > div.dropDown > a:hover {
+	cursor: pointer;
+	background: #f2f2f2;
+}
+	
+/***********  Toolbar DropDown CSS for notification **************/
+
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD {
+	max-width: none;
+	width: 400px
+}
+/*.cui .header-toolbar > ul > li> div.dropDown.notifyDD:before{width:0; height:0; position:absolute; content:""; border-left:10px solid transparent;border-right:10px solid transparent; border-bottom:10px solid #049fd9; top: -10px;
+right: 44px;}*/
+/*********** DropDown CSS **************/
+
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD{max-width:none; width: 400px;  }
+/*.cui .header-toolbar > ul > li> div.dropDown.notifyDD:before{width:0; height:0; position:absolute; content:""; border-left:10px solid transparent;border-right:10px solid transparent; border-bottom:10px solid #049fd9; top: -10px;
+right: 44px;}*/
+/*.cui .header-toolbar > ul > li> div.dropDown.notifyDD .dropdnHeader {background:#049fd9;padding:10px; margin: 0;
+
+list-style: none;}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .dropdnHeader li{float:left;width:33.33%}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .dropdnHeader li a{padding-left:35px;font-size:12px;height:25px;color:#fff;}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .dropdnHeader li a.activitiesIco{background:url(../images/activitiesIco.png) no-repeat 0 0;color:#082a5c;}
+
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .dropdnHeader li a.subscribeIco{background:url(../images/subscribeIco.png) no-repeat 0 -30px;height:29px;}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .dropdnHeader li a.gropsIco{background:url(../images/gropsIco.png) no-repeat 0 -26px;}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .dropdnHeader li a span{display:block}*/
+
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .dropdnHeader {padding:10px; margin: 0;list-style: none; border-bottom: 2px solid #dfdfdf; display: flex}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .dropdnHeader li{width:33.33%; text-align: center}
+
+
+
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .sortLink {border-bottom:1px solid #dfdfdf;text-align: right; padding:0 15px;}
+.notifyDD .sortLink a{display: inline-block;background: url(../images/sortIco.png) no-repeat right 8px;padding: 5px 20px 7px 0;color: #049fd9;font-size: 12px;}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc{padding: 10px; margin: 0; height: 340px; display: block; overflow-y: auto; margin-bottom: 10px; list-style: none;}
+
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc li{border-bottom:1px solid #dfdfdf; display: flex}
+/*.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc li:last-child{border:none;}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc li span{display: inline-block;width: 10px;border-radius: 10px;height: 10px;float: left;margin-top: 16px;margin-right: 9px;}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc li div{float:left;width:330px;}*/
+
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc div p{margin: 0 10px 5px 25px;}
+/*.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc div p.gray{color:#878787;}
+
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc div p.activitiesIcoSmall{background:url(../images/activitiesIcoSmall.png) no-repeat 0 0;display:block;padding-left:25px;font-size:10px;color:#3a3a3a;}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc div p.activitiesIcoGrSmall{background:url(../images/activitiesIcoGrSmall.png) no-repeat 0 0;display:block;padding-left:25px;font-size:10px;color:#3a3a3a;}
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .desc li a.closeBtn{background:url(../images/closeIco.png) 0 0 no-repeat;display:block;float:right;height:15px;width:12px;margin-top:12px;}*/
+.cui .header-toolbar > ul > li> div.dropDown.notifyDD .viewLink {text-align:right;padding:0 15px 10px;display:block;text-align:right;}.cui .apollo-sidebar, .cui .sidebar {
+	display: none
+}
+.cui .content-fluid .sidebar ~ main {
+	margin-left: 0
+}
+}
+
+
